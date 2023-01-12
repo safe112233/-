@@ -1,0 +1,17 @@
+# This is the network config written by 'subiquity'
+#network:
+# ethernets:
+#  ens36:
+#   dhcp4: true
+# version: 2
+
+network:
+ ethernets:
+  ens36:
+   addresses:
+    - 10.0.0.128/24
+   routes:
+    - to: default
+      via: 10.10.0.1
+ version: 2
+ renderer: networkd
